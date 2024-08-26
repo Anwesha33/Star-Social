@@ -1,0 +1,15 @@
+<!-- templates/accounts/logout.html -->
+
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container">
+    <h1>Logout</h1>
+    <p>Are you sure you want to log out?</p>
+    <form method="POST" action="{% url 'accounts:logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Logout</button>
+        <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+    </form>
+</div>
+{% endblock %}
