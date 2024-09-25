@@ -1,2 +1,2 @@
 # Star-Social
-A social media clone designed using HTML, CSS, Javascript, Bootstrap, Python and Django
+A blog website designed using HTML, CSS, Javascript, Bootstrap, Python and Django
